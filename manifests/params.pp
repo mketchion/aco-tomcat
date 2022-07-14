@@ -34,6 +34,11 @@ class tomcat::params {
         }
         default  : {
           case $::operatingsystemmajrelease {
+            '8'     : {
+              $version = '9.0.50-5'
+              $package_name = 'jws5-tomcat'
+              $systemd = true
+            }
             # http://mirror.centos.org/centos-7/7/updates/x86_64/Packages/
             '7'     : {
               $version = '7.0.76'
