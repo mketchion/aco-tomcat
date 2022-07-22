@@ -35,7 +35,7 @@ class tomcat::params {
         default  : {
           case $::operatingsystemmajrelease {
             '8'     : {
-              $version = '9.0.50-5'
+              $version = '9.0.50-5.redhat_00007.1.el8jws'
               $package_name = 'jws5-tomcat'
               $systemd = true
             }
